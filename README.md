@@ -1,2 +1,2 @@
 # vyro-originals-
-Chocotia colourful bakery and gifting website demo
+Official VYRO Originals digital ebook store
