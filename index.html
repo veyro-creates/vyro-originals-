@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101510">
+<title>VYRO Deals | Digital Knowledge Store</title>
+<style>
+:root{--bg:#0c100d;--panel:#151c17;--panel2:#1b241e;--gold:#d9b66d;--cream:#f3ead8;--muted:#a4ad9f;--line:#2b372e;--green:#a6c49b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--cream);font-family:Arial,Helvetica,sans-serif}button,input,select{font:inherit}button{cursor:pointer}.topbar{background:#101711;border-bottom:1px solid var(--line);padding:13px 5%;display:flex;align-items:center;justify-content:space-between;gap:15px;position:sticky;top:0;z-index:20}.logo{font-size:24px;font-weight:900;letter-spacing:3px;color:var(--gold)}.logo small{display:block;font-size:9px;letter-spacing:4px;color:var(--muted);font-weight:500;margin-top:3px}.nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.nav a{color:var(--cream);text-decoration:none;font-size:13px}.nav a:hover{color:var(--gold)}.nav button,.iconbtn{background:var(--panel2);border:1px solid var(--line);color:var(--cream);padding:9px 12px;border-radius:9px}.count{color:var(--gold);font-weight:bold}.hero{padding:75px 6% 65px;background:radial-gradient(ellipse at 80% 10%,#35432e 0%,transparent 40%),linear-gradient(135deg,#101811,#0c100d 70%);border-bottom:1px solid var(--line)}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:4px;text-transform:uppercase}.hero h1{font-family:Georgia,serif;font-size:clamp(40px,7vw,76px);line-height:1.04;max-width:780px;margin:18px 0}.hero h1 span{color:var(--gold);font-style:italic}.hero p{color:var(--muted);max-width:590px;line-height:1.8;font-size:15px}.btn{border:0;border-radius:8px;padding:13px 19px;background:var(--gold);color:#17170f;font-weight:bold}.btn:hover{filter:brightness(1.1)}.btn.secondary{background:transparent;color:var(--cream);border:1px solid var(--line)}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.trust{display:flex;gap:22px;flex-wrap:wrap;color:var(--muted);font-size:12px;margin-top:35px}.section{padding:48px 5%}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:23px}.section h2{font-family:Georgia,serif;font-size:30px;margin:0 0 8px}.sub{color:var(--muted);font-size:13px;line-height:1.6}.category-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.category{background:var(--panel);border:1px solid var(--line);padding:18px 12px;border-radius:12px;text-align:left;color:var(--cream);min-height:105px}.category:hover,.product:hover{border-color:var(--gold);transform:translateY(-2px)}.category .emoji{font-size:25px}.category strong{display:block;font-size:12px;margin-top:12px}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}.toolbar input,.toolbar select,.field input,.field textarea{background:#111813;border:1px solid var(--line);border-radius:8px;padding:12px;color:var(--cream);outline:none}.toolbar input{flex:1;min-width:180px}.toolbar select{min-width:145px}.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.product{background:var(--panel);border:1px solid var(--line);border-radius:13px;overflow:hidden;transition:.2s;cursor:pointer}.cover{height:170px;background:linear-gradient(145deg,#26392b,#111913);display:flex;align-items:center;justify-content:center;text-align:center;padding:18px;position:relative}.cover .cover-icon{font-size:43px;display:block;margin-bottom:12px}.cover strong{font-family:Georgia,serif;font-size:19px;line-height:1.2}.cover:after{content:"VYRO DEALS";position:absolute;bottom:12px;right:13px;font-size:8px;letter-spacing:2px;color:#d9b66d88}.product-info{padding:15px}.tag{font-size:9px;color:var(--gold);letter-spacing:1.4px;text-transform:uppercase}.product h3{font-size:15px;line-height:1.35;margin:8px 0}.product p{font-size:12px;color:var(--muted);line-height:1.6;min-height:38px;margin:0 0 12px}.price-row{display:flex;align-items:center;justify-content:space-between;gap:8px}.price{font-size:17px;font-weight:bold;color:var(--gold)}.status{font-size:10px;color:#e3c987;background:#3b3020;padding:6px 8px;border-radius:20px}.product-actions{display:flex;gap:7px;margin-top:13px}.product-actions button{flex:1;padding:9px 6px;border-radius:7px;border:1px solid var(--line);background:#202a22;color:var(--cream);font-size:11px}.product-actions button:disabled{opacity:.45;cursor:not-allowed}.product-actions .details{background:var(--gold);color:#17170f;border:0;font-weight:bold}.banner{margin:0 5% 45px;padding:30px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(110deg,#1d2a20,#141a15);display:flex;justify-content:space-between;align-items:center;gap:20px}.banner h2{font-family:Georgia,serif;margin:0 0 8px}.banner p{color:var(--muted);font-size:13px;margin:0}.footer{border-top:1px solid var(--line);padding:35px 5%;background:#0a0e0b}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:25px}.footer a{display:block;color:var(--muted);text-decoration:none;font-size:12px;margin:10px 0}.footer a:hover{color:var(--gold)}.footer h4{font-size:12px;color:var(--gold);letter-spacing:1px}.copyright{border-top:1px solid var(--line);padding-top:18px;margin-top:25px;color:var(--muted);font-size:11px}.page{display:none;min-height:65vh;padding:42px 5%}.page.active{display:block}.page h1{font-family:Georgia,serif;font-size:38px}.page-content{max-width:850px;color:var(--muted);line-height:1.8;font-size:14px}.page-content h3{color:var(--cream);margin-top:25px}.empty{text-align:center;padding:55px 15px;color:var(--muted);background:var(--panel);border-radius:12px}.modal-bg{display:none;position:fixed;inset:0;background:#000b;z-index:50;align-items:center;justify-content:center;padding:15px}.modal-bg.open{display:flex}.modal{background:var(--panel);border:1px solid var(--line);border-radius:15px;width:min(650px,100%);max-height:90vh;overflow:auto;padding:23px;position:relative}.close{position:absolute;right:15px;top:12px;background:#273229;color:white;border:0;border-radius:7px;padding:7px 10px}.modal h2{font-family:Georgia,serif;font-size:28px;margin:8px 35px 12px 0}.modal p{color:var(--muted);line-height:1.7;font-size:14px}.modal-cover{height:180px;border-radius:10px;background:linear-gradient(140deg,#304332,#111913);display:grid;place-items:center;font-size:55px;margin-bottom:18px}.field{margin:13px 0}.field label{display:block;color:var(--muted);font-size:12px;margin-bottom:7px}.field input,.field textarea{width:100%}.field textarea{min-height:90px;resize:vertical}.cartline{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:13px 0;font-size:13px}.cartline button{background:none;border:0;color:#e9a29a}.total{display:flex;justify-content:space-between;font-size:19px;font-weight:bold;margin:20px 0;color:var(--gold)}.notice{font-size:12px;color:var(--muted);line-height:1.7;background:#101711;border:1px solid var(--line);padding:12px;border-radius:8px;margin:15px 0}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--gold);color:#111;padding:12px 18px;border-radius:9px;z-index:90;display:none;font-size:13px;font-weight:bold}
+@media(max-width:900px){.category-grid{grid-template-columns:repeat(3,1fr)}.product-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:620px){.topbar{padding:12px 4%;align-items:flex-start}.logo{font-size:20px}.nav{gap:7px;justify-content:flex-end}.nav a{display:none}.nav button{padding:8px;font-size:11px}.hero{padding:55px 5%}.section{padding:35px 4%}.category-grid{grid-template-columns:repeat(2,1fr)}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.cover{height:140px}.cover strong{font-size:16px}.cover .cover-icon{font-size:32px}.product-info{padding:11px}.product h3{font-size:13px}.product p{font-size:11px}.product-actions{flex-direction:column}.banner{margin:0 4% 30px;padding:22px;display:block}.banner .btn{margin-top:15px}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>div:first-child{grid-column:1/-1}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+ <div class="logo" onclick="go('home')">VYRO<small>DEALS · DIGITAL KNOWLEDGE</small></div>
+ <nav class="nav">
+  <a href="#home" onclick="go('home')">Home</a>
+  <a href="#shop" onclick="go('shop')">Explore ebooks</a>
+  <a href="#categories" onclick="go('categories')">Categories</a>
+  <button onclick="go('wishlist')">♡ <span id="wishCount" class="count">0</span></button>
+  <button onclick="go('cart')">Cart <span id="cartCount" class="count">0</span></button>
+ </nav>
+</header>
+
+<main id="homePage">
+<section class="hero">
+ <div class="eyebrow">Knowledge is an investment</div>
+ <h1>Learn more.<br><span>Become more.</span></h1>
+ <p>Explore practical digital guides made to help you learn new skills, improve your lifestyle and move towards your goals — one page at a time.</p>
+ <div class="hero-actions">
+  <button class="btn" onclick="go('shop')">Explore the library →</button>
+  <button class="btn secondary" onclick="go('categories')">Browse categories</button>
+ </div>
+ <div class="trust"><span>✦ Digital learning</span><span>✦ Practical guides</span><span>✦ WhatsApp support</span></div>
+</section>
+
+<section class="section" id="categoriesSection">
+ <div class="section-head"><div><div class="eyebrow">Explore by interest</div><h2>Knowledge categories</h2><div class="sub">Find a guide that matches your next goal.</div></div></div>
+ <div class="category-grid" id="categoryGrid"></div>
+</section>
+
+<section class="section">
+ <div class="section-head"><div><div class="eyebrow">The digital library</div><h2>Explore our ebooks</h2><div class="sub">Browse the VYRO Deals collection.</div></div><button class="btn secondary" onclick="go('shop')">View all →</button></div>
+ <div class="product-grid" id="featuredGrid"></div>
+</section>
+
+<div class="banner"><div><h2>Your next chapter starts here.</h2><p>Explore useful guides and build your knowledge at your own pace.</p></div><button class="btn" onclick="go('shop')">Explore ebooks</button></div>
+</main>
+
+<section class="page" id="shopPage">
+ <div class="eyebrow">VYRO digital library</div><h1>Explore ebooks</h1><p class="sub">Search the collection and discover your next learning guide.</p>
+ <div class="toolbar"><input id="searchBox" placeholder="Search ebooks..." oninput="renderShop()"><select id="categoryFilter" onchange="renderShop()"><option value="">All categories</option></select><select id="sortFilter" onchange="renderShop()"><option value="default">Sort: Featured</option><option value="az">Name: A to Z</option></select></div>
+ <div class="product-grid" id="shopGrid"></div>
+</section>
+
+<section class="page" id="categoriesPage"><div class="eyebrow">Find your topic</div><h1>All categories</h1><div class="category-grid" id="allCategoryGrid"></div></section>
+<section class="page" id="cartPage"><div class="eyebrow">Your selection</div><h1>Your cart</h1><div id="cartContent"></div></section>
+<section class="page" id="wishlistPage"><div class="eyebrow">Saved for later</div><h1>Your wishlist</h1><div class="product-grid" id="wishlistGrid"></div></section>
+<section class="page" id="checkoutPage"><div class="eyebrow">Almost there</div><h1>Checkout</h1><div id="checkoutContent"></div></section>
+<section class="page" id="infoPage"><div class="eyebrow">VYRO Deals</div><h1 id="infoTitle"></h1><div class="page-content" id="infoContent"></div></section>
+
+<footer class="footer">
+ <div class="footer-grid">
+  <div><div class="logo">VYRO<small>DEALS · DIGITAL KNOWLEDGE</small></div><p class="sub">A digital library for curious minds and lifelong learners.</p></div>
+  <div><h4>EXPLORE</h4><a href="#shop" onclick="go('shop')">All ebooks</a><a href="#categories" onclick="go('categories')">Categories</a><a href="#about" onclick="info('about')">About us</a><a href="#contact" onclick="info('contact')">Contact</a></div>
+  <div><h4>INFORMATION</h4><a href="#privacy" onclick="info('privacy')">Privacy policy</a><a href="#terms" onclick="info('terms')">Terms & conditions</a><a href="#refund" onclick="info('refund')">Refund policy</a><a href="#delivery" onclick="info('delivery')">Digital delivery</a><a href="#disclaimer" onclick="info('disclaimer')">Disclaimer</a></div>
+ </div>
+ <div class="copyright">© <span id="year"></span> VYRO Deals. All rights reserved. | Digital products are delivered manually after payment verification.</div>
+</footer>
+
+<div class="modal-bg" id="productModal" onclick="if(event.target===this)closeModal()"><div class="modal" id="productModalBody"></div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const WHATSAPP = "919321627696";
+const UPI_ID = "9321627696@fam";
+const STORE_NAME = "VYRO Deals";
+const categories = [
+ ["Fitness & Gym","💪"],["Pet Training & Care","🐾"],["Money & Finance","💰"],
+ ["Self Improvement","🌱"],["Food & Recipes","🍲"],["Technology & Skills","💻"],
+ ["Education & Career","🎓"],["Business & Entrepreneurship","🚀"],["AI & Digital Skills","🤖"],
+ ["Relationships & Lifestyle","❤️"],["Travel & Guides","✈️"],["Parenting & Family","🏡"]
+];
+
+// All products are catalogue previews until their real PDF files are ready.
+// Change available:false to true only after the finished PDF is ready for delivery.
+const products = [
+ {id:1,title:"The Beginner's Gym Blueprint",cat:"Fitness & Gym",price:99,icon:"💪",desc:"A beginner-friendly introduction to gym routines, exercise form, recovery and building consistent fitness habits."},
+ {id:2,title:"Home Workout Starter Guide",cat:"Fitness & Gym",price:79,icon:"🏠",desc:"Learn how to structure simple home workouts with minimal equipment and a realistic weekly routine."},
+ {id:3,title:"Strength Training Basics",cat:"Fitness & Gym",price:99,icon:"🏋️",desc:"Understand basic strength training principles, exercise selection, technique and gradual progression."},
+ {id:4,title:"Healthy Habits & Fitness Tracker",cat:"Fitness & Gym",price:49,icon:"📈",desc:"A practical guide to tracking workouts, daily movement, hydration and healthy habits."},
+
+ {id:5,title:"Puppy Training Made Simple",cat:"Pet Training & Care",price:99,icon:"🐶",desc:"An introduction to positive reinforcement, basic commands, routines and puppy socialisation."},
+ {id:6,title:"Dog Obedience Basics",cat:"Pet Training & Care",price:99,icon:"🦮",desc:"Learn the foundations of teaching recall, sit, stay, leash manners and calm behaviour."},
+ {id:7,title:"Indoor Pet Care Guide",cat:"Pet Training & Care",price:79,icon:"🐈",desc:"Everyday guidance on enrichment, cleanliness, feeding routines and responsible pet care."},
+ {id:8,title:"New Pet Owner Handbook",cat:"Pet Training & Care",price:79,icon:"🐾",desc:"Prepare your home and understand the everyday responsibilities of caring for a new pet."},
+
+ {id:9,title:"Personal Finance for Beginners",cat:"Money & Finance",price:99,icon:"💰",desc:"Understand budgeting, saving, spending decisions and basic financial planning."},
+ {id:10,title:"The Smart Budget Planner",cat:"Money & Finance",price:49,icon:"📒",desc:"A simple system for tracking income, expenses, savings goals and monthly budgets."},
+ {id:11,title:"Saving Money Step by Step",cat:"Money & Finance",price:79,icon:"🐷",desc:"Practical ways to review spending, set savings targets and build better money habits."},
+ {id:12,title:"Investing Concepts Explained",cat:"Money & Finance",price:99,icon:"📊",desc:"An educational introduction to risk, diversification, long-term investing and common terms."},
+
+ {id:13,title:"Build Better Daily Habits",cat:"Self Improvement",price:79,icon:"🌱",desc:"Learn how to set small goals, create routines and make positive habits easier to maintain."},
+ {id:14,title:"Discipline Over Motivation",cat:"Self Improvement",price:99,icon:"🎯",desc:"A practical guide to consistency, planning, focus and following through on commitments."},
+ {id:15,title:"Time Management Blueprint",cat:"Self Improvement",price:79,icon:"⏳",desc:"Organise your priorities, plan your week and make more intentional use of your time."},
+ {id:16,title:"Confidence & Communication",cat:"Self Improvement",price:99,icon:"🗣️",desc:"Explore practical communication habits, listening skills and ways to prepare for conversations."},
+
+ {id:17,title:"Easy Everyday Recipes",cat:"Food & Recipes",price:79,icon:"🍲",desc:"A collection concept for simple everyday meals, kitchen planning and beginner cooking."},
+ {id:18,title:"Healthy Meal Prep Guide",cat:"Food & Recipes",price:99,icon:"🥗",desc:"Learn the basics of planning meals, preparing ingredients and organising a weekly menu."},
+ {id:19,title:"Beginner's Cooking Handbook",cat:"Food & Recipes",price:99,icon:"👨‍🍳",desc:"Understand kitchen basics, cooking methods, ingredient preparation and food safety."},
+ {id:20,title:"Quick Breakfast Ideas",cat:"Food & Recipes",price:49,icon:"🥞",desc:"A practical guide concept for quick breakfast planning and easy morning meals."},
+
+ {id:21,title:"Computer Skills Starter Pack",cat:"Technology & Skills",price:99,icon:"💻",desc:"Learn essential computer concepts, file management, typing and everyday digital skills."},
+ {id:22,title:"Excel Basics for Beginners",cat:"Technology & Skills",price:99,icon:"📊",desc:"An introduction to spreadsheets, formulas, formatting, tables and simple data organisation."},
+ {id:23,title:"Internet Safety Handbook",cat:"Technology & Skills",price:79,icon:"🔐",desc:"Understand passwords, privacy, scams, safe browsing and responsible online behaviour."},
+ {id:24,title:"Digital Productivity Guide",cat:"Technology & Skills",price:79,icon:"⚡",desc:"Explore useful digital workflows for organising tasks, notes, files and everyday work."},
+
+ {id:25,title:"Career Planning for Beginners",cat:"Education & Career",price:99,icon:"🎓",desc:"Explore interests, career research, skill-building and practical career planning."},
+ {id:26,title:"Interview Preparation Guide",cat:"Education & Career",price:99,icon:"🤝",desc:"Prepare for interviews with research, practice questions and professional communication."},
+ {id:27,title:"Resume Writing Made Easy",cat:"Education & Career",price:79,icon:"📄",desc:"Learn how to structure a clear resume and present skills, education and experience."},
+ {id:28,title:"Study Smarter Handbook",cat:"Education & Career",price:79,icon:"📚",desc:"Explore revision planning, active recall, note-taking and focused study sessions."},
+
+ {id:29,title:"Start a Small Business",cat:"Business & Entrepreneurship",price:99,icon:"🚀",desc:"Understand business ideas, customer needs, basic planning and simple operations."},
+ {id:30,title:"Marketing Basics Handbook",cat:"Business & Entrepreneurship",price:99,icon:"📣",desc:"An introduction to branding, customer research, content and marketing fundamentals."},
+ {id:31,title:"Small Business Finance",cat:"Business & Entrepreneurship",price:99,icon:"🧾",desc:"Learn basic concepts around costs, pricing, cash flow and record keeping."},
+ {id:32,title:"Customer Service Skills",cat:"Business & Entrepreneurship",price:79,icon:"⭐",desc:"Build better customer communication, service processes and problem-solving habits."},
+
+ {id:33,title:"AI Tools for Everyday Work",cat:"AI & Digital Skills",price:99,icon:"🤖",desc:"Explore how AI tools can support research, writing, brainstorming and productivity."},
+ {id:34,title:"Prompt Writing for Beginners",cat:"AI & Digital Skills",price:99,icon:"⌨️",desc:"Learn to write clearer prompts, add context and improve AI-assisted results."},
+ {id:35,title:"Create Content with AI",cat:"AI & Digital Skills",price:99,icon:"✨",desc:"Understand an ethical workflow for planning, drafting and reviewing digital content."},
+ {id:36,title:"AI & Digital Safety Guide",cat:"AI & Digital Skills",price:79,icon:"🛡️",desc:"Learn about privacy, verification, responsible AI use and common digital risks."},
+
+ {id:37,title:"Healthy Relationship Habits",cat:"Relationships & Lifestyle",price:79,icon:"❤️",desc:"Explore communication, respect, boundaries and everyday relationship habits."},
+ {id:38,title:"Minimalist Lifestyle Guide",cat:"Relationships & Lifestyle",price:79,icon:"🪴",desc:"A practical introduction to decluttering, intentional choices and simpler routines."},
+ {id:39,title:"Personal Style Essentials",cat:"Relationships & Lifestyle",price:79,icon:"👔",desc:"Learn basic wardrobe planning, fit, colour coordination and personal presentation."},
+ {id:40,title:"Mindful Living Handbook",cat:"Relationships & Lifestyle",price:79,icon:"🌿",desc:"Explore simple reflection, mindful routines and ways to create calmer daily habits."},
+
+ {id:41,title:"Travel Planning Made Easy",cat:"Travel & Guides",price:79,icon:"✈️",desc:"Learn how to plan routes, budgets, accommodation and practical travel checklists."},
+ {id:42,title:"Budget Travel Handbook",cat:"Travel & Guides",price:99,icon:"🎒",desc:"Explore ways to compare costs, plan essentials and manage a travel budget."},
+ {id:43,title:"First-Time Traveller Guide",cat:"Travel & Guides",price:79,icon:"🧳",desc:"A beginner's checklist for documents, packing, transport and travel preparation."},
+ {id:44,title:"Smart Packing Checklist",cat:"Travel & Guides",price:49,icon:"🧭",desc:"Organise luggage and essentials with practical packing lists for different trips."},
+
+ {id:45,title:"Positive Parenting Basics",cat:"Parenting & Family",price:99,icon:"🏡",desc:"An educational introduction to supportive communication, routines and positive reinforcement."},
+ {id:46,title:"Family Budget Planner",cat:"Parenting & Family",price:79,icon:"👨‍👩‍👧",desc:"Plan household expenses, savings goals and family spending with a simple framework."},
+ {id:47,title:"Kids' Learning Activities",cat:"Parenting & Family",price:79,icon:"🧩",desc:"Explore age-appropriate activity ideas for creativity, reading and everyday learning."},
+ {id:48,title:"Organised Home Handbook",cat:"Parenting & Family",price:79,icon:"🧹",desc:"Build simple home routines for cleaning, storage, planning and shared responsibilities."}
+].map(p=>({...p,available:false}));
+
+let cart = JSON.parse(localStorage.getItem("vyroCart")||"[]");
+let wishlist = JSON.parse(localStorage.getItem("vyroWishlist")||"[]");
+let currentProduct = null;
+
+function save(){localStorage.setItem("vyroCart",JSON.stringify(cart));localStorage.setItem("vyroWishlist",JSON.stringify(wishlist));updateCounts()}
+function updateCounts(){document.getElementById("cartCount").textContent=cart.reduce((s,x)=>s+x.qty,0);document.getElementById("wishCount").textContent=wishlist.length}
+function toast(msg){let t=document.getElementById("toast");t.textContent=msg;t.style.display="block";setTimeout(()=>t.style.display="none",2200)}
+function go(page){
+ document.getElementById("homePage").style.display=page==="home"?"block":"none";
+ document.querySelectorAll(".page").forEach(x=>x.classList.remove("active"));
+ let target=document.getElementById(page+"Page");if(target)target.classList.add("active");
+ if(page==="shop")renderShop();if(page==="cart")renderCart();if(page==="wishlist")renderWishlist();if(page==="checkout")renderCheckout();
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+function info(which){
+ const data={
+ about:["About VYRO Deals",`<p>VYRO Deals is a digital knowledge store built around practical learning resources across different interests and everyday skills.</p><h3>Our purpose</h3><p>We aim to make useful educational content easier to discover and access. Each published ebook should have a clear description and be delivered after payment verification.</p><h3>Our catalogue</h3><p>Some catalogue entries are previews and are marked Coming Soon. Only products explicitly marked Available can be ordered.</p>`],
+ contact:["Contact us",`<p>For product questions, order assistance or delivery support, contact VYRO Deals on WhatsApp.</p><p><strong>WhatsApp:</strong> +91 93216 27696</p><p>For an existing order, include your order reference and the phone number used at checkout. Never share your UPI PIN, OTP or banking password.</p><button class="btn" onclick="openWhatsApp('Hello VYRO Deals, I need assistance.')">Chat on WhatsApp</button>`],
+ privacy:["Privacy Policy",`<p>VYRO Deals may collect information you submit during checkout, such as your name, WhatsApp number and email address if provided. This information is used to process orders, confirm payments and deliver digital products.</p><h3>Payment information</h3><p>Payments are made through your chosen UPI application. VYRO Deals does not ask for your UPI PIN, OTP or banking password.</p><h3>Data sharing</h3><p>We do not intend to sell customer personal information. WhatsApp and payment providers process information under their own terms and privacy policies.</p><h3>Contact and requests</h3><p>Contact us on WhatsApp to ask about your order information. Do not send sensitive financial credentials.</p>`],
+ terms:["Terms & Conditions",`<p>By using this website, you agree to use the store responsibly and provide accurate order details.</p><h3>Digital products</h3><p>Products marked Coming Soon are not available for purchase. Only products marked Available can be ordered. Ebook descriptions are provided to explain the intended content.</p><h3>Intellectual property</h3><p>Digital files supplied by VYRO Deals are for the customer's personal use unless a separate licence says otherwise. Do not redistribute, resell or reproduce them without permission.</p><h3>Order processing</h3><p>Orders are processed after payment is independently verified. An order message or payment screenshot alone does not confirm payment.</p><h3>Changes</h3><p>Product details and these terms may be updated. Please review them before placing an order.</p>`],
+ refund:["Refund & Cancellation Policy",`<p>Please review the ebook description before placing an order. Since ebooks are digital products, cancellation or refunds after successful delivery may not be possible except where required by applicable law.</p><h3>Wrong or missing file</h3><p>If you receive an incorrect, corrupted or incomplete file, contact us on WhatsApp with your order reference so we can investigate and provide an appropriate resolution.</p><h3>Payment problems</h3><p>If money is debited but your order is not confirmed, contact us with the UPI transaction reference. We will verify the payment before taking action.</p><h3>Duplicate payment</h3><p>Contact us with both transaction references if you believe you paid twice.</p>`],
+ delivery:["Digital Delivery Policy",`<p>Digital products are delivered manually through WhatsApp after the payment is verified in the receiving UPI account.</p><h3>Delivery process</h3><p>1. Select an Available ebook. 2. Submit your order details. 3. Pay using the displayed UPI option. 4. Send the order reference on WhatsApp. 5. VYRO Deals checks the actual payment credit and sends the PDF manually.</p><h3>Delivery time</h3><p>Manual delivery may take time. If you have not received your file, contact us with your order reference.</p><h3>Important</h3><p>Never send your UPI PIN or OTP. A screenshot or UTR is not final proof of payment until the payment is verified.</p>`],
+ disclaimer:["Disclaimer",`<p>VYRO Deals provides general educational information. Content is not a substitute for qualified professional advice.</p><p>Fitness, nutrition, finance, career, pet care and parenting information should be considered general learning material. Individual needs and circumstances vary. Consult an appropriately qualified professional when necessary.</p><p>We do not guarantee specific financial, fitness, career or business results. Customers are responsible for how they use the information.</p>`],
+ copyright:["Copyright Policy",`<p>All original VYRO Deals website content, branding and published ebook materials are protected by applicable intellectual property laws.</p><p>Do not copy, redistribute, upload or resell our digital products without written permission. If you believe material on this website infringes your rights, contact us with details so we can review the concern.</p>`],
+ faq:["Frequently Asked Questions",`<h3>How do I buy an ebook?</h3><p>Choose an Available product, add it to your cart and continue to checkout.</p><h3>How will I receive my PDF?</h3><p>After payment verification, the PDF is sent manually through WhatsApp.</p><h3>Can I order Coming Soon products?</h3><p>No. These products are displayed as catalogue previews and cannot be purchased yet.</p><h3>Is payment automatic?</h3><p>No. Payment verification and PDF delivery are manual.</p><h3>What if I have a problem?</h3><p>Contact us on WhatsApp with your order reference.</p>`]
+ };
+ let d=data[which];document.getElementById("infoTitle").textContent=d[0];document.getElementById("infoContent").innerHTML=d[1];go("info");
+}
+function openWhatsApp(message){window.open("https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(message),"_blank")}
+function categoryHTML(c){return `<button class="category" onclick="filterCategory(${JSON.stringify(c[0])})"><span class="emoji">${c[1]}</span><strong>${c[0]}</strong></button>`}
+function renderCategories(){document.getElementById("categoryGrid").innerHTML=categories.map(categoryHTML).join("");document.getElementById("allCategoryGrid").innerHTML=categories.map(categoryHTML).join("");document.getElementById("categoryFilter").innerHTML='<option value="">All categories</option>'+categories.map(c=>`<option>${c[0]}</option>`).join("")}
+function filterCategory(c){go("shop");document.getElementById("categoryFilter").value=c;renderShop()}
+function productCard(p){return `<article class="product" onclick="openProduct(${p.id})"><div class="cover"><div><span class="cover-icon">${p.icon}</span><strong>${p.title}</strong></div></div><div class="product-info"><div class="tag">${p.cat}</div><h3>${p.title}</h3><p>${p.desc}</p><div class="price-row"><span class="price">₹${p.price}</span><span class="status">${p.available?"Available":"Coming Soon"}</span></div><div class="product-actions"><button onclick="event.stopPropagation();toggleWish(${p.id})">${wishlist.includes(p.id)?"♥ Saved":"♡ Wishlist"}</button><button class="details" onclick="event.stopPropagation();openProduct(${p.id})">View details</button></div></div></article>`}
+function renderShop(){
+ let q=(document.getElementById("searchBox")?.value||"").toLowerCase(),c=document.getElementById("categoryFilter")?.value||"",sort=document.getElementById("sortFilter")?.value||"default";
+ let list=products.filter(p=>(!c||p.cat===c)&&(!q||(p.title+" "+p.cat+" "+p.desc).toLowerCase().includes(q)));
+ if(sort==="az")list.sort((a,b)=>a.title.localeCompare(b.title));
+ document.getElementById("shopGrid").innerHTML=list.length?list.map(productCard).join():'<div class="empty">No ebooks found. Try another search.</div>';
+}
+function openProduct(id){
+ let p=products.find(x=>x.id===id);if(!p)return;currentProduct=p;
+ document.getElementById("productModalBody").innerHTML=`<button class="close" onclick="closeModal()">✕</button><div class="modal-cover">${p.icon}</div><div class="tag">${p.cat}</div><h2>${p.title}</h2><p>${p.desc}</p><div class="price-row"><span class="price">₹${p.price}</span><span class="status">${p.available?"Available":"Coming Soon"}</span></div><div class="notice">${p.available?"This ebook is ready to order. PDF delivery is handled manually after payment verification.":"This ebook is currently being prepared. It is not available for purchase yet. Please check back later."}</div><button class="btn" style="width:100%" ${p.available?"":"disabled"} onclick="addToCart(${p.id});closeModal()">Add to cart</button><button class="btn secondary" style="width:100%;margin-top:9px" onclick="toggleWish(${p.id})">${wishlist.includes(p.id)?"Remove from wishlist":"Add to wishlist"}</button>`;
+ document.getElementById("productModal").classList.add("open");
+}
+function closeModal(){document.getElementById("productModal").classList.remove("open")}
+function addToCart(id){let p=products.find(x=>x.id===id);if(!p||!p.available){toast("This ebook is not available yet.");return}let item=cart.find(x=>x.id===id);if(item)item.qty++;else cart.push({id,qty:1});save();toast("Added to cart")}
+function toggleWish(id){wishlist=wishlist.includes(id)?wishlist.filter(x=>x!==id):[...wishlist,id];save();renderWishlist();if(currentProduct)openProduct(id);toast("Wishlist updated")}
+function renderWishlist(){let list=products.filter(p=>wishlist.includes(p.id));document.getElementById("wishlistGrid").innerHTML=list.length?list.map(productCard).join():'<div class="empty">Your wishlist is empty.</div>'}
+function cartItems(){return cart.map(x=>({...products.find(p=>p.id===x.id),qty:x.qty})).filter(x=>x.id)}
+function total(){return cartItems().reduce((s,x)=>s+x.price*x.qty,0)}
+function renderCart(){
+ let list=cartItems(),el=document.getElementById("cartContent");
+ if(!list.length){el.innerHTML='<div class="empty">Your cart is empty.<br><br><button class="btn" onclick="go(\'shop\')">Explore ebooks</button></div>';return}
+ el.innerHTML=list.map(x=>`<div class="cartline"><div><strong>${x.title}</strong><br><span class="sub">₹${x.price} × ${x.qty}</span><br><button onclick="changeQty(${x.id},-1)">−</button> <button onclick="changeQty(${x.id},1)">+</button></div><div>₹${x.price*x.qty}<br><button onclick="removeCart(${x.id})">Remove</button></div></div>`).join()+`<div class="total"><span>Total</span><span>₹${total()}</span></div><button class="btn" onclick="go('checkout')">Proceed to checkout →</button>`;
+}
+function changeQty(id,n){let x=cart.find(i=>i.id===id);if(!x)return;x.qty+=n;if(x.qty<=0)cart=cart.filter(i=>i.id!==id);save();renderCart()}
+function removeCart(id){cart=cart.filter(x=>x.id!==id);save();renderCart()}
+function renderCheckout(){
+ let el=document.getElementById("checkoutContent"),list=cartItems();
+ if(!list.length){el.innerHTML='<div class="empty">Your cart is empty. <button class="btn" onclick="go(\'shop\')">Explore ebooks</button></div>';return}
+ el.innerHTML=`<div class="notice">Your order will be processed manually. Please make sure your WhatsApp number is correct.</div><h3>Order summary</h3>${list.map(x=>`<div class="cartline"><span>${x.title} × ${x.qty}</span><strong>₹${x.price*x.qty}</strong></div>`).join("")}<div class="total"><span>Total to pay</span><span>₹${total()}</span></div><div class="field"><label>Full name *</label><input id="customerName" placeholder="Your name"></div><div class="field"><label>WhatsApp number *</label><input id="customerPhone" type="tel" placeholder="10-digit mobile number" maxlength="10"></div><div class="field"><label>Email (optional)</label><input id="customerEmail" type="email" placeholder="you@example.com"></div><button class="btn" style="width:100%" onclick="placeOrder()">Continue to UPI payment</button><div class="notice">UPI ID: <strong>${UPI_ID}</strong><br>After paying, return to WhatsApp and send your order reference. Your PDF will be sent after payment is verified.</div>`;
+}
+function placeOrder(){
+ let name=document.getElementById("customerName").value.trim(),phone=document.getElementById("customerPhone").value.trim(),email=document.getElementById("customerEmail").value.trim();
+ if(!name||!/^[6-9][0-9]{9}$/.test(phone)){toast("Enter your name and valid 10-digit mobile number.");return}
+ let list=cartItems(),amount=total();if(!list.length)return;
+ let ref="VYRO"+Date.now().toString().slice(-8);
+ let message=`Hello VYRO Deals! I have placed an order.\nOrder reference: ${ref}\nName: ${name}\nWhatsApp: ${phone}\nEmail: ${email||"Not provided"}\n\n${list.map(x=>x.title+" × "+x.qty+" = ₹"+(x.price*x.qty)).join("\n")}\nTotal: ₹${amount}\n\nI will share my UPI transaction reference after payment. Please verify payment and send my ebook PDF.`;
+ localStorage.setItem("vyroLastOrder",JSON.stringify({ref,name,phone,email,amount,message,created:new Date().toISOString()}));
+ document.getElementById("checkoutContent").innerHTML=`<div class="empty"><div class="eyebrow">Order created</div><h2 style="color:var(--gold)">Your reference: ${ref}</h2><p>Total amount: <strong>₹${amount}</strong></p><p>1. Pay using your UPI app.<br>2. Return here and send the order details on WhatsApp.<br>3. We will verify the payment and deliver your PDF manually.</p><button class="btn" onclick="payUPI(${amount})">Pay ₹${amount} with UPI</button><br><br><button class="btn secondary" onclick="openWhatsApp(${JSON.stringify(message)})">Send order on WhatsApp</button><p class="sub">Do not share your UPI PIN or OTP. Payment is confirmed only after checking the receiving account.</p></div>`;
+}
+function payUPI(amount){
+ let order=JSON.parse(localStorage.getItem("vyroLastOrder")||"null");if(!order){toast("Please create an order first.");return}
+ let url="upi://pay?pa="+encodeURIComponent(UPI_ID)+"&pn="+encodeURIComponent(STORE_NAME)+"&am="+encodeURIComponent(amount)+"&cu=INR&tn="+encodeURIComponent("Order "+order.ref);
+ window.location.href=url;
+}
+document.getElementById("year").textContent=new Date().getFullYear();
+renderCategories();
+document.getElementById("featuredGrid").innerHTML=products.slice(0,8).map(productCard).join("");
+updateCounts();
+go("home");
+</script>
+</body>
+</html>
